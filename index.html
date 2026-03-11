@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="app">
+    <header class="app-header">
+      <h1 class="app-title">Task Manager</h1>
+      <p class="app-subtitle">Manage your daily tasks</p>
+    </header>
+
+
+    <!-- TASK INPUT AREA -->
+
+    <section class="task-input-section">
+
+      <div class="task-input-container">
+
+        <input
+          type="text"
+          id="taskInput"
+          class="task-input js-input-field"
+          placeholder="Add a new task..."
+        >
+
+        <button id="addTaskBtn" class="add-task-btn js-add-task">
+          Add Task
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- TASK LIST -->
+
+    <section class="task-list-section">
+
+      <ul id="taskList" class="task-list js-task-list">
+
+
+        <!-- TASK 1 -->
+
+        <!-- <li class="task-item">
+
+          <span class="task-text">
+            Finish JavaScript course
+          </span>
+
+          <div class="task-actions">
+
+            <button class="complete-btn">
+              ✓
+            </button>
+
+            <button class="edit-btn">
+              Edit
+            </button>
+
+            <button class="delete-btn">
+              Delete
+            </button>
+
+          </div>
+
+        </li>
+ -->
+      </ul>
+
+    </section>
+
+  </main>
+
+</body>
+<script src="script.js"></script>
+</html>

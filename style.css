@@ -96,7 +96,10 @@ body{
   background:#ef4444;
   color:white;
 }
-
+.disabled-btn{
+  opacity: 0.4;
+  cursor: not-allowed;
+}
 .completed .task-text{
   text-decoration:line-through;
   color:gray;

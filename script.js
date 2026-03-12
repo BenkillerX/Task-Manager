@@ -4,6 +4,7 @@ const buttonLm = document.querySelector('.js-add-task');
 const taskList = document.querySelector('.js-task-list');
 
 let editingIndex = null;
+
 inputField.addEventListener('keydown',(event)=>{
     if (event.key === 'Enter') {
         addTask()
@@ -19,11 +20,11 @@ buttonLm.addEventListener('click',()=>{
 function renderTasks() {
     let TasksHTML = "";
     Tasks.forEach((task, index)=>{
-        const grayed = task.completed ? "completed" : "";
+        const grayedTask = task.completed ? "completed" : "";
         const completedClass = task.completed ? "disabled-btn" : "";
         const disabledAtrr = task.completed ? "disabled" : ""
     TasksHTML += `
-     <li class="task-item ${grayed}">
+     <li class="task-item ${grayedTask}">
 
           <span class="task-text ${task.completed ? 'completed-task' : ''}">
             ${task.taskValue}

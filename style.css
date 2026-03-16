@@ -98,6 +98,8 @@ body{
 }
 .disabled-btn{
   opacity: 0.4;
+}
+.disabled-btn:hover{
   cursor: not-allowed;
 }
 .completed .task-text{
